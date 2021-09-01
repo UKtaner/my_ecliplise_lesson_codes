@@ -36,15 +36,14 @@ public static void element( List<Integer> l ) {
 //5)Create a method to calculate the sum of the squares of distinct even elements	
 //6)Create a method to calculate the product of the cubes of distinct even elements
 //7)Create a method to find the maximum value from the list elements
-    //1.Way:
-//8)Create a method to find the minimum value from the list elements
-    //1.Way:
-	
 	//9)Create a method to find the minimum value which is greater than 7 and even from the list
-    
-System.out.println( l.stream().distinct().filter(t->t>5).map(t->t/2.0).sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
-    
-    		
+
+    //10)Create a method to find the half of the elements which are distinct and greater than 5 in reverse order in the list.
+	
+	
+	System.out.println(l.stream().distinct().filter(t->t>5).map(t->t/2).sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
+	
+	
 		}
 		
 	}
