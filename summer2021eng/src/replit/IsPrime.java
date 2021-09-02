@@ -9,7 +9,7 @@ public class IsPrime {
 		
 		Write a program that prompts the user to input a positive integer. 
 		It should then output a message indicating whether the number is a prime number. 
-
+		==>a number that is divisible only by itself and 1 (e.g. 2, 3, 5, 7, 11).
 				 */
 				
 			Scanner input=new Scanner (System.in);
@@ -20,8 +20,8 @@ public class IsPrime {
 			
 			boolean flag=true;
 			int i;
-			for (i=2;i<num;i++) {
-			
+			for (i=2;i<num/2;i++) {
+			  
 				if(num%i==0) {
 				flag=false;
 				break;

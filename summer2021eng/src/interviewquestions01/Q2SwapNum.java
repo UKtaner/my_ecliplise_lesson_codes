@@ -2,7 +2,7 @@ package interviewquestions01;
 
 import java.util.Scanner;
 
-public class Q3SwapNum {
+public class Q2SwapNum {
 	//Write a Java Program to swap two numbers
 	
 public static void main(String[] args) {

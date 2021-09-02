@@ -2,7 +2,7 @@ package interviewquestions01;
 
 import java.util.Scanner;
 
-public class Q4Fibonacci02 {
+public class Q3Fibonacci02 {
 
 public static void fibonacci(int input) {
 	

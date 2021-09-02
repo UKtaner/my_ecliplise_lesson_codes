@@ -1,6 +1,6 @@
 package interviewquestions01;
 
-public class Q02NumberReverse {
+public class Q1NumberReverse02 {
 
 	public static void main(String[] args) {
 		
