@@ -80,7 +80,7 @@ public class Functional_Programming_String03 {
 		l.stream().sorted(Comparator.comparing(String::length).thenComparing(t->t.charAt(0))).forEach(System.out::println);
 	
 		//thenComparing() can be used many times
-	}
+	} 
 
 	//5) Remove the elements if the length of the element is greater than 5
 	

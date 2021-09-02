@@ -25,18 +25,11 @@ public class Utils {
 	    return x/2.0;
 	}
 
-	public static String getLastChar1(String s) {
-		
-		String a=s.substring(s.length()-1);
-	
-		return a;
-	
-	}
 	public static Integer getSumOfDigits(int x) {
-		int sum=0;
-		while(x!=0) {
-			sum+=x%10;
-			x=x/10;
+	int sum=0;
+	while(x!=0) {
+		sum+=x%10;
+		x=x/10;
 		}
 		return sum;
 	}

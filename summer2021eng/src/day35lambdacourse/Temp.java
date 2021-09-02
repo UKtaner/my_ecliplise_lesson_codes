@@ -11,45 +11,42 @@ public class Temp {
 	
 public static void main(String[] args) {
         
-    List<Integer> l = new ArrayList<Integer>();
-    l.add(12);
-    l.add(9);
-    l.add(131);
-    l.add(14);
-    l.add(9);
-    l.add(10);
-    l.add(4);
-    l.add(12);
-    l.add(15);
-  
-   
+	List<String> l = new ArrayList<>();
+    l.add("Ali");
+    l.add("Ali");
+    l.add("Mark");
+    l.add("Amanda");
+    l.add("Christopher");
+    l.add("Jackson");
+    l.add("Mariano");
+    l.add("Alberto");
+    l.add("Tucker");
+    l.add("Benjamin");
     
-    element(l);
-     
-			}
+  System.out.println(l);
+ 
+  printUppercase01(l);
+
+}
+
+//5) Remove the elements if the length of the element is greater than 5
+
+		public static void printUppercase01(List<String> l) {
+	
+			System.out.println(l.removeIf(t->t.length()>5));
 			
 
-//2)Create a method to print the even list elements on the console in the same line with a space between two consecutive elements.(Structured)	
-public static void element( List<Integer> l ) {
-//3)Create a method to print the square of odd list elements on the console in the same line with a space between two consecutive elements.
-//4)Create a method to print the cube of distinct odd list elements on the console in the same line with a space between two consecutive elementAAs.
-//5)Create a method to calculate the sum of the squares of distinct even elements	
-//6)Create a method to calculate the product of the cubes of distinct even elements
-//7)Create a method to find the maximum value from the list elements
-	//9)Create a method to find the minimum value which is greater than 7 and even from the list
-
-    //10)Create a method to find the half of the elements which are distinct and greater than 5 in reverse order in the list.
-	
-	
-	System.out.println(l.stream().distinct().filter(t->t>5).map(t->t/2).sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
-	
-	
+		
 		}
-		
-	}
-	
-		
-		
+
+
+
+
+
+
+}
+
+
 		
 			
 			
