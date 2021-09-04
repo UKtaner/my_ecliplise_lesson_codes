@@ -1,5 +1,7 @@
 package interviewquestions01;
 
+import java.util.Scanner;
+
 public class Q5FindMaxAndMinOfArray02 {
 
 	public static void main(String[] args) {
@@ -9,13 +11,16 @@ Input : {3,2,5,4,1,6}
 Output : 
 min: 1 
 max: 6
- */
+ */	
+	
+		
+	}
 
-		
-		
+	static void findMaxAndMin(int input[]) {
 		
 		
 		
 	}
-
+	
+	
 }
