@@ -47,7 +47,8 @@ public class Functional_Programming_String03 {
 	public static void printUppercase01(List<String> l) {
 		
 		l.stream().map(String::toUpperCase).forEach(Utils::printInTheSameLineWithASpace);
-				//we used String class		//we used Utils class
+		// ALI, ALI, MARK, AMANDA, CHRISTOPHER, JACKSON, MARIANO, ALBERTO, TUCKER, BENJAMIN
+		
 	}
 	//2.way
 	public static void printUppercase02(List<String> l) {
@@ -55,7 +56,7 @@ public class Functional_Programming_String03 {
 	l.replaceAll(String::toUpperCase);
 	//replaceAll() accepts method ref. and updated the list as same functionality with map()
 	//forEach() and map() are under stream()
-	System.out.println(l);
+	System.out.println(l);//[ALI, ALI, MARK, AMANDA, CHRISTOPHER, JACKSON, MARIANO, ALBERTO, TUCKER, BENJAMIN]
 	
 	}
 	

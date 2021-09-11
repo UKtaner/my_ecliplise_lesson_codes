@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 // SAVE AS==> Alt + F + A
 // OPEN TEXT FILE==> Ctrl + N
-public class FunctionalProgramming05Dt {
+public class FunctionalProgramming05 {
 
 	public static void main(String[] args) {
 		
@@ -45,6 +45,7 @@ public class FunctionalProgramming05Dt {
 	}
 	
     //2)Create a method to check if at least one of the course names contains "Turkish" word
+	
 	public static boolean checkCourseName(List<Course> coursesList, String str) {
 		
 		return coursesList.stream().anyMatch(t->t.getCourseName().contains(str));

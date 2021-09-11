@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 
-public class FunctionalProgramming06DT {
+public class FunctionalProgramming06 {
 
 	
 		public static void main(String[] args) throws IOException {

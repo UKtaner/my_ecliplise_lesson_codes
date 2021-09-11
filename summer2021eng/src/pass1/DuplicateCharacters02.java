@@ -19,15 +19,14 @@ public class DuplicateCharacters02 {
 	                if (!duplicates.contains(String.valueOf(str.charAt(j)))) {
 	                    duplicates += str.charAt(j);
 	                    break;
-	                }
-
+	                 }
 	            }
 	        }
 	    }
 
-	   // System.out.println(duplicates);
+	    System.out.println(duplicates);//as
 	    char []c=duplicates.toCharArray();
-	    System.out.println(Arrays.toString(c));
+	    System.out.println(Arrays.toString(c));//[a, s]
     }
 
 }

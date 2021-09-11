@@ -77,28 +77,31 @@ public class Structural_To_Functional_Programming01 {
 	    
 	    //1)Create a method to print the list elements on the console in the same line with a space between two consecutive elements.(Structured)
 	    public static void printElStructured(List<Integer> l) {
-	      /*
-	       for(int i=0;i<l.size();i++) {
-			System.out.print(l.get(i)+" ");
+	      /*	       
+			        for(int i=0;i<l.size();i++) {
+					System.out.print(l.get(i)+" ");						
 	       */
-	    	
-	    	
+	    	    	
 	        for(Integer w : l) {
 	            System.out.print(w + " ");
+	            
+	            
 	        }
 	        
 	    }
 	    
 	    //1)Create a method to print the list elements on the console in the same line with a space between two consecutive elements.(Functional)
+	    
 	    public static void printElFunctional(List<Integer> l) {
-	        l.stream().forEach(t->System.out.print(t + " "));//by f.p. access to more method to use.if i do not use stream() than can not use forEch() here. 
+	        l.stream().forEach(t->System.out.print(t + " "));	//by f.p. access to more method to use.if i do not use stream() than can not use forEch() here. 
 	        // forEach() gets the elements one by one than place them in t container.
 	   
-//	 l.forEach(t->System.out.print(t + " "));//12 9 131 14 9 10 4 12 15 	
+//			 l.forEach(t->System.out.print(t + " "));	//12 9 131 14 9 10 4 12 15 	
 	    
 	    }
 	    
-	    //2)Create a method to print the even list elements on the console in the same line with a space between two consecutive elements.(Structured)
+//	2)Create a method to print the even list elements on the console in the same line with a space between two consecutive elements.(Structured)
+	    
 	    public static void printEvensStructured(List<Integer> l) {
 	        
 	        for(Integer w : l) {
@@ -136,7 +139,7 @@ public class Structural_To_Functional_Programming01 {
 	        
 	        Integer sum = l.stream().distinct().filter(t->t%2==0).map(t->t*t).reduce(0, (t,u)->t+u);//For sum, make the first parameter zero
 	        System.out.println("The sum of the squares of even distinct elements is " + sum);// t gets first value as 0 and u get its value from stream. 
-	        
+	 // since reduce() is terminal operation, after itself we can not use any method. we assigned sum container.         
 	    }
 	    
 	     //6)Create a method to calculate the product of the cubes of distinct even elements
@@ -162,6 +165,7 @@ public class Structural_To_Functional_Programming01 {
 	        //sorted() ==> Returns a stream consisting of the elements of this stream, sorted according to natural order.
 	        Integer maxEl =  l.stream().distinct().sorted().reduce(Integer.MIN_VALUE, (t,u)->u);
 	        System.out.println("The max element is " + maxEl);
+// without sorted(), code checks the params one by one and the last param is 15, will be printed.  	    
 	    }
 	    //8)Create a method to find the minimum value from the list elements
 	    //1.Way:
@@ -198,6 +202,8 @@ public class Structural_To_Functional_Programming01 {
 	        //Use findFirst() together with get() to get Integer return type
 	        Integer minEl = l.stream().distinct().filter(t->t>7 && t%2==0).sorted().findFirst().get();
 	        System.out.println("2) The min element is " + minEl);
+	        
+//Integer result=l.stream().filter(t->t>7 && t%2==0).sorted(Comparator.reverseOrder()).reduce(Integer.MIN_VALUE,(t,u)->u);	        
 	    }
 	    
 	    //10)Create a method to find the half of the elements which are distinct and greater than 5 in reverse order in the list.

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class FunctionalProgramming04DT {
+public class FunctionalProgramming04 {
 //IntStream is giving integer stream and having starting  and ending value.
 //2. Integer s=IntStream.rangeClosed(7, 100).reduce(0, Integer::sum);
 //3. Integer s=IntStream.rangeClosed(x, y).filter(t->t%2==0).reduce(0, Integer::sum);

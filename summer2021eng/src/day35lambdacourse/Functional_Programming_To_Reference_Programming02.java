@@ -10,7 +10,7 @@ public class Functional_Programming_To_Reference_Programming02 {
 	public static void main(String[] args) {
 		
 		/*
-	 	Method Reference: Class Name :: Method Name without method parenthesis 
+	 	Method Reference: Class Name  :: Method Name without method parenthesis 
 	 	Example ==>        String     :: length
 	 	                   ArrayList  :: size
 	 */

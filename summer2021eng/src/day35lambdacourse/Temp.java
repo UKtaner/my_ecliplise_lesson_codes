@@ -6,45 +6,44 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+import com.sun.net.httpserver.Filter;
 
 public class Temp {
 	
 public static void main(String[] args) {
-        
-	List<String> l = new ArrayList<>();
-    l.add("Ali");
-    l.add("Ali");
-    l.add("Mark");
-    l.add("Amanda");
-    l.add("Christopher");
-    l.add("Jackson");
-    l.add("Mariano");
-    l.add("Alberto");
-    l.add("Tucker");
-    l.add("Benjamin");
-    
-  System.out.println(l);
- 
-  printUppercase01(l);
-
+	
+	Course courseTurkishDay = new Course("Summer", "Turkish Day", 97, 128);
+	Course courseTurkishNight = new Course("Winter", "Turkish Night", 98, 154);
+	Course courseEnglishDay = new Course("Spring", "English Day", 95, 132);
+	Course courseEnglishNight = new Course("Winter", "English Night", 93, 144);
+	
+	List<Course> coursesList = new ArrayList<>();
+	coursesList.add(courseTurkishDay);
+	coursesList.add(courseTurkishNight);
+	coursesList.add(courseEnglishDay);
+	coursesList.add(courseEnglishNight);
+  
+	
 }
 
-//5) Remove the elements if the length of the element is greater than 5
-
-		public static void printUppercase01(List<String> l) {
-	
-			System.out.println(l.removeIf(t->t.length()>5));
-			
+//1)Create a method to check if all average scores are greater than 91
 
 		
-		}
+		
+		
+		
+		
+		
+	
+		
+	
+		
+	}
 
 
 
-
-
-
-}
 
 
 		

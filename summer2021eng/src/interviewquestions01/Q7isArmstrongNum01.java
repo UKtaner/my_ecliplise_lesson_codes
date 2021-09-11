@@ -9,7 +9,7 @@ public class Q7isArmstrongNum01 {
 	*/
 	public static void main(String[] args) {
 	
-		isArmstron(152);
+		//isArmstron(152);
 
 	}
 	
@@ -17,10 +17,10 @@ public class Q7isArmstrongNum01 {
 	public static void lenOfDigit(int input) {
 	int len=0;
 	
-	while(input>0) {
-		input=input/10;
-		len++;		
-	
+//	while(input>0) {
+//		input=input/10;
+//		//len++;		
+//	
 	}
 	public static void isArmstron(int input, int len) {
 	int sum=0;
