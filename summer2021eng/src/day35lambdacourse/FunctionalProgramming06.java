@@ -31,18 +31,18 @@ public class FunctionalProgramming06 {
 			Files.
 				lines(Paths.get("src/lambdacourse/LambdaTextFile.txt")).
 				map(t->t.split(" ")).//elements are inside the array in stream
-				flatMap(Arrays::stream).//flatMap() breaks the array structure than convert the elements to stream
+				//flatMap(Arrays::stream).//flatMap() breaks the array structure than convert the elements to stream
 				distinct().
 				forEach(System.out::println);
-			
+	
 			System.out.println("==============");
 					
 			//Get the words which end with "e" and print them on the console
 			Files.
 				lines(Paths.get("src/lambdacourse/LambdaTextFile.txt")).
 				map(t->t.split(" ")).
-				flatMap(Arrays::stream).
-				filter(t->t.endsWith("e")).
+				//flatMap(Arrays::stream).
+				//filter(t->t.endsWith("e")).
 				forEach(System.out::println);
 
 		}

@@ -1,9 +1,10 @@
-package day31NTIteratorscollections;
+package interviewquestions01;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Test01 {
+public class Q13isAnagram03 {
+
 
 	public static void main(String[] args) {
 		/*
@@ -27,14 +28,15 @@ public class Test01 {
 
 	public static boolean isAnagram(String input1 ,String input2) {
 	
-		char arr1[]=input1.toCharArray();
-		Arrays.sort(arr1);		
-		char arr2[]=input2.toCharArray();
-		Arrays.sort(arr2);
+		String arr1[]=input1.split("");
+		String arr2[]=input2.split("");
 		
-		 if(Arrays.equals(arr1, arr2)) {
+		if(arr1.length!=arr2.length) {
+			return false;
+			
+		}else if(Arrays.equals(arr1, arr2)) {
 			return true;	
-		}else {
-		return false;
+		}
+		return true;
 		}	
-	}}
+	}

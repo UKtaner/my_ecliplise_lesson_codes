@@ -21,7 +21,7 @@ public class IsAnagram03 {
 	
 	public static void main(String[] args) {
 	
-
+		System.out.println(isAnagram("read","dear"));
 	}
 
 }

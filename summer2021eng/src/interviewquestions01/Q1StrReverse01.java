@@ -40,6 +40,20 @@ public class Q1StrReverse01 {
 		}		
 		return reverse;		
 	}	
-		
+	/*
+	 String class does not have reverse() method, we need to convert the input string to StringBuilder, it has
+	 String input = "Geeks for Geeks";
+ 
+        StringBuilder input1 = new StringBuilder();
+ 
+        // append a string into StringBuilder input1
+        input1.append(input);
+ 
+        // reverse StringBuilder input1
+        input1.reverse();
+ 
+        // print reversed String
+        System.out.println(input1);	
+	 */
 
 }

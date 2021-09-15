@@ -29,8 +29,8 @@ public class IsAnagram {
 	}
 	
 	public static void main(String[] args) {
-	System.out.println(isAnagram("elbow","below"));
-	System.out.println(isAnagram2("elbow","below"));
+	System.out.println(isAnagram("Mother In Law","Hitler Woman"));
+	System.out.println(isAnagram2("Mother In Law","Hitler Woman"));
 	}
 
 }

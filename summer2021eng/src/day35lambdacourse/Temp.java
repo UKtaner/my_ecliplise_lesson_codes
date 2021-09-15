@@ -24,40 +24,20 @@ public static void main(String[] args) {
 	coursesList.add(courseTurkishNight);
 	coursesList.add(courseEnglishDay);
 	coursesList.add(courseEnglishNight);
-  
 	
+	
+//	1)Create a method to check if all average scores are greater than 91
+	
+//	2)Create a method to check if at least one of the course names contains "Turkish" word	
+	
+//3)Create a method to print the course whose average score is the highest
+
+
+
 }
 
-//1)Create a method to check if all average scores are greater than 91
-
-		
-		
-		
-		
-		
-		
-	
-		
-	
-		
-	}
 
 
 
 
-
-		
-			
-			
-		
-
-
-
-
-
-
-
-
-
-	
-	
+}

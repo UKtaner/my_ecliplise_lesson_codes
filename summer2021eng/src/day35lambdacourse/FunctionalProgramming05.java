@@ -33,18 +33,19 @@ public class FunctionalProgramming05 {
 
 	}
 	
-    //1)Create a method to check if all average scores are greater than 91
+//	1)Create a method to check if all average scores are greater than 91
 	public static boolean checkAvgScore(List<Course> coursesList, int x) {
 		
 		boolean result = coursesList.stream().allMatch(t->t.getAverageScore()>x);
 // allMatch() will check all scores one by one if greater than 91 or not and all must be (true) greater than 91 otherwise will return false
+	
 		return result;
 	
 // to use allMatch(), we need to access stream() and to use stream(), we need to use collections List.... 		
 		
 	}
 	
-    //2)Create a method to check if at least one of the course names contains "Turkish" word
+//	2)Create a method to check if at least one of the course names contains "Turkish" word
 	
 	public static boolean checkCourseName(List<Course> coursesList, String str) {
 		

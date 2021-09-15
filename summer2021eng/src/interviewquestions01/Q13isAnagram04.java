@@ -1,10 +1,9 @@
-package day31NTIteratorscollections;
+package interviewquestions01;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Test01 {
-
+public class Q13isAnagram04 {
 	public static void main(String[] args) {
 		/*
 		  Ask user to enter 2 Strings.

@@ -42,6 +42,7 @@ public class LinkedList01 {
 		
 		System.out.println(ll1);
 		
+	
 		ll1.add("Angie");
 		ll1.add(2, "XXXX");
 		ll1.addFirst("AAAA");

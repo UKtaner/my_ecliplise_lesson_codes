@@ -7,29 +7,18 @@ public class Q2SwapNum {
 	
 public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter 2 numbers to swap");
-		double n1 = scan.nextDouble();
-		double n2 = scan.nextDouble();
-		
-		System.out.println("Before swapping: " + n1 + " - " + n2);
-		
-		//1.Way: Use 3rd variable 
-		double temp = n1;
-		n1 = n2;
-		n2 = temp;
-		System.out.println("After swapping: " + n1 + " - " + n2);
-		
-		
-		
-		//2.Way: Do not use 3rd variable
-		n1 = n1 + n2;
-		n2 = n1 - n2;
-		n1 = n1 - n2;
-		System.out.println("After swapping: " + n1 + " - " + n2);
-		
-		
-
-	}
+	Scanner scan=new Scanner (System.in);
+	System.out.println("Enter first number");
+	int num1=scan.nextInt();
+	System.out.println("Enter second number");
+	int num2=scan.nextInt();
+	System.out.println("Before swap : "+num1+" to "+num2);
+	int temp;
+	
+		temp=num1;
+		num1=num2;
+		num2=temp;
+		System.out.println("After swap : "+num1+" to "+num2);	
+}
 
 }
